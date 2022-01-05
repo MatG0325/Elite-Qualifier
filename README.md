@@ -13,6 +13,7 @@ A simple chatbot for you to interact with.
 ## Background
 
 This is a project for the Code2College program.
+This project was made throughout many days.
 
 ## Install
 
