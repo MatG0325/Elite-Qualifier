@@ -28,4 +28,4 @@ No steps to start; just go ahead and use it!
 To test the project:
 1. Run the test
 2. Check the results
-3. Report test
+3. Mateo reported test
