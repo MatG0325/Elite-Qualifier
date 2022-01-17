@@ -71,7 +71,7 @@ def get_time_greeting():
     return(time_greetings[-1])
 
 # Checks if the user had a valid input and then responds back. If the input is invalid, it prints a confused message.
-def respond(user_input, response_count):
+def respond_eng(user_input, response_count):
   user_input = user_input.lower()
   for i in range(len(potential_input)):
     if potential_input[i] in user_input:
@@ -102,13 +102,18 @@ def respond(user_input, response_count):
       print("Sorry, I'm not sure I understand.")
 
 # Main Loop
-print("The following interaction is a simple chatbot who is only able to respond to questions about the date, time, and weather. You may stop talking at any time but inputting a blank response. Get started by saying hello: ")
+print("The following interaction is a simple chatbot who is only able to respond to questions about the date, time, and weather. You may stop talking at any time but inputting a blank response. Get started by selecting a language: ". end="")
+language = str(input(""))
+# Implement start message in preferred language
 while True:
   user_input = str(input(""))
   clear()
   if user_input == "":
     break
-  respond(user_input, count)
+  if language == "english":
+    respond_eng(user_input, count)
+  else:
+    continue
   count += 1
   
 print("Thank you for using the bot!")
