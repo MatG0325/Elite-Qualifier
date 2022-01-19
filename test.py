@@ -1,9 +1,9 @@
 import unittest
 # from main import
 """
-class TestIsOdd(unittest.TestCase):
+class Test(unittest.TestCase):
 
-    def test_odd_num(self):
+    def test_func(self):
       self.assertTrue()
 
       
