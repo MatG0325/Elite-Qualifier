@@ -8,7 +8,7 @@ class PerformanceTest(unittest.TestCase):
 
     def test_perf(self):
         start_time = time.time()
-        for i in range(1000000):
+        for i in range(100):
             self.test()
         end_time = time.time()
         elapsed_time = end_time - start_time
